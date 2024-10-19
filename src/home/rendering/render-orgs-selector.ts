@@ -14,7 +14,7 @@ export function getOrgs(): string[] {
   });
 
   // Remove duplicates
-  return Array.from(new Set(orgs)).concat(Array.from(new Set(orgs)));
+  return Array.from(new Set(orgs));
 }
 
 export function renderOrgsSelector() {
