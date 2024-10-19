@@ -69,7 +69,6 @@
     max-width: 640px;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 56px 0;
     transition: 0.25s all cubic-bezier(0, 1, 1, 1);
     width: 100%;
   }
@@ -850,5 +849,95 @@
   }
   .preview-active div#mobile-modal-scrub {
     display: unset;
+  }
+
+  #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 56px 0;
+    max-width: 640px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    transition: 0.25s all cubic-bezier(0, 1, 1, 1);
+    width: 100%;
+  }
+
+  #orgs-controller {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 640px;
+    padding: 15px 5px 10px;
+    box-sizing: border-box;
+    gap: 10px;
+  }
+
+  #orgs-selector {
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    box-sizing: border-box;
+    max-width: 630px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 15px 0px 10px 0px;
+    transition: 0.25s all cubic-bezier(0, 1, 1, 1);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    flex: 1;
+    z-index: 0;
+  }
+
+  #orgs-clear {
+    flex: 0 0 auto; /* Prevent shrinking */
+    cursor: pointer;
+    font-size: 18px;
+    color: #5c5c5c;
+    padding: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    z-index: 0;
+  }
+  
+  #orgs-clear:hover {
+    color: #000000;
+    font-size: 19px;
+  }
+
+  .organization-element {
+    border: 1px solid #7f7f7f20;
+    display: flex;
+    align-items: center;
+    padding: 8px 8px;
+    border-radius: 4px;
+    background-color: #000210;
+    cursor: pointer;
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+  }
+
+  .organization-element:hover {
+    background-color: #00031b;
+    border-color: #d8d8d8;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .organization-element.selected {
+    background-color: #1a1a2e;
+    border-color: #9c9c9c;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }  
+
+  .organization-avatar {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+  .organization-name {
+    color: #000000;
+    font-size: 15px;
   }
 }
