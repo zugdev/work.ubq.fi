@@ -892,7 +892,7 @@
   }
 
   #orgs-clear {
-    flex: 0 0 auto; /* Prevent shrinking */
+    flex: 0 0 auto;
     cursor: pointer;
     font-size: 18px;
     color: #5c5c5c;
@@ -914,7 +914,7 @@
     border-radius: 4px;
     background-color: #000210;
     cursor: pointer;
-    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+    white-space: nowrap;
   }
 
   .organization-element:hover {
