@@ -17,7 +17,7 @@ export function getOrgs(): string[] {
   return Array.from(new Set(orgs)).concat(Array.from(new Set(orgs)));
 }
 
-export function renderOrganizations() {
+export function renderOrgsSelector() {
   const orgsSelector = document.getElementById("orgs-selector");
   const orgsClear = document.getElementById("orgs-clear");
 
