@@ -1,0 +1,3 @@
+[submodule "submodules/command-start-stop"]
+	path = submodules/command-start-stop
+	url = https://github.com/ubiquity-os-marketplace/command-start-stop
